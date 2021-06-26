@@ -1,0 +1,20 @@
+server:
+  port: 9991
+spring:
+  application:
+    name: hystrix-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka
+feign:
+  hystrix:
+    enabled: true #开启熔断
+hystrix:
+  command:
+    default: #default是全局控制，也可以换成单个服务控制，default换成实例名称即可
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 1000 #信号量隔离级别最大并发数
+

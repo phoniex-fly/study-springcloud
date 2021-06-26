@@ -1,0 +1,47 @@
+server:
+  port: ${PORT:8761}
+spring:
+  application:
+    name: eureka-server
+eureka:
+  server: #一般在server端编写
+    response-cache-auto-expiration-in-seconds: 180 #server端向client端响应服务列表的时间间隔
+    eviction-interval-timer-in-ms: 90000 #清除无效节点的频率 90s
+    enable-self-preservation: true #server的自我保护机制，避免因为网络原因造成误删除
+    renewal-percent-threshold: 0.85 #85%，如果在一个机房的client端，15分钟内有85%的client没有续约，则可能是网络问题
+  client: #一般在client端编写
+    service-url:
+      defaultZone: http://peer1:8761/eureka #单机
+    #      defaultZone: ${EUREKA_SERVER_URL:http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer2:8763/eureka} #集群
+    register-with-eureka: ${REGISTER_WITH_EUREKA:true} #注册服务时候自己注册自己
+    fetch-registry: ${FETCH_REGISTRY:true} #是否拉取注册中心里的注册信息
+  instance: #都可以写
+    hostname: ${HOST:localhost}
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    prefer-ip-address: ${PREFER_IP_ADDRESS:true} #显示IP地址
+    lease-renewal-interval-in-seconds: ${LEASE_RENEWAL_INTERVAL_IN-SECONDS:30} #客户端发送心跳的时间
+    lease-expiration-duration-in-seconds: ${LEASE_EXPIRATION_DURATION_IN_SECONDS:90} #实例的自我剔除时间，不让请求和流量过来\
+
+#server:
+#  port: 8761
+#spring:
+#  application:
+#    name: eureka-server
+#eureka:
+#  server: #一般在server端编写
+#    response-cache-auto-expiration-in-seconds: 180 #server端向client端响应服务列表的时间间隔
+#    eviction-interval-timer-in-ms: 90000 #清除无效节点的频率 90s
+#    enable-self-preservation: true #server的自我保护机制，避免因为网络原因造成误删除
+#    renewal-percent-threshold: 0.85 #85%，如果在一个机房的client端，15分钟内有85%的client没有续约，则可能是网络问题
+#  client: #一般在client端编写
+#    service-url:
+#      #      defaultZone: http://peer1:8761/eureka #单机
+#      defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer2:8763/eureka #集群
+#    register-with-eureka: true #注册服务时候自己注册自己
+#    fetch-registry: true #是否拉取注册中心里的注册信息
+#  instance: #都可以写
+#    hostname: localhost
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+#    prefer-ip-address: true #显示IP地址
+#    lease-renewal-interval-in-seconds: 30 #客户端发送心跳的时间
+#    lease-expiration-duration-in-seconds: 90 #实例的自我剔除时间，不让请求和流量过来

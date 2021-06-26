@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="01-eureka" />
+        <module name="03-ribbon-consumer" />
+        <module name="02-ribbon" />
+        <module name="03-my-hystrix" />
+        <module name="01-hystrix-provider" />
+        <module name="01-eureka-server" />
+        <module name="01-rest-template" />
+        <module name="02-hystrix-consumer" />
+        <module name="04-hystrix" />
+        <module name="03-feign" />
+        <module name="02-ribbon-provider-b" />
+        <module name="02-ribbon-provider-a" />
+        <module name="02-eureka-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="03-feign" target="1.5" />
+      <module name="hystrix" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01-eureka-server" options="-parameters" />
+      <module name="01-hystrix-provider" options="-parameters" />
+      <module name="01-rest-template" options="-parameters" />
+      <module name="02-eureka-client" options="-parameters" />
+      <module name="02-hystrix-consumer" options="-parameters" />
+      <module name="02-ribbon" options="" />
+      <module name="02-ribbon-provider-a" options="-parameters" />
+      <module name="02-ribbon-provider-b" options="-parameters" />
+      <module name="03-my-hystrix" options="-parameters" />
+      <module name="03-ribbon-consumer" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+    </option>
+  </component>
+</project>

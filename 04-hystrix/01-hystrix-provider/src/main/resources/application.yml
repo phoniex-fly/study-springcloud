@@ -1,0 +1,10 @@
+server:
+  port: 9992
+spring:
+  application:
+    name: hystrix-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka
+

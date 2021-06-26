@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/01-eureka/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/01-eureka/eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/02-ribbon/01-rest-template/pom.xml" />
+        <option value="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/pom.xml" />
+        <option value="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/pom.xml" />
+        <option value="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/03feign/pom.xml" />
+        <option value="$PROJECT_DIR$/03-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/01-eureka/01-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/01-eureka/02-eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/04-hystrix/03-my-hystrix/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/03-feign/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
