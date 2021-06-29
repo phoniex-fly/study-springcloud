@@ -7,3 +7,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  #暴露健康检查端点，让服务可被监控

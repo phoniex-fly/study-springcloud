@@ -13,6 +13,8 @@
         <module>02-ribbon</module>
         <module>03-feign</module>
         <module>04-hystrix</module>
+        <module>05-gateway</module>
+        <module>07-config</module>
     </modules>
 
 

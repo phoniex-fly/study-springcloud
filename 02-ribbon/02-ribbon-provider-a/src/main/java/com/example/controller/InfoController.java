@@ -17,4 +17,9 @@ public class InfoController {
         }
         return "第一个提供者";
     }
+
+    @GetMapping("info1")
+    public String info1() {
+        return "第一个提供者";
+    }
 }

@@ -18,6 +18,12 @@
         <option value="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/pom.xml" />
         <option value="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/04-hystrix/03-my-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/05-gateway/00-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/05-gateway/01-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/06-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/07-config-server/07-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/07-config/07-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/07-config/07-config-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

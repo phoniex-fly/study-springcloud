@@ -1,0 +1,13 @@
+server:
+  port: 8999
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/phoniex-fly/spring-cloud-config.git
+          username: shixiaoyan@sinosoft.com.cn
+          password: sxy666395
+          search-paths: /config

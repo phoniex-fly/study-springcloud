@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/01-eureka/02-eureka-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/01-eureka/02-eureka-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/02-ribbon/01-rest-template/src/main/java" charset="UTF-8" />
@@ -12,5 +13,12 @@
     <file url="file://$PROJECT_DIR$/04-hystrix/01-hystrix-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/00-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/01-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/01-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/01-gateway/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-config/07-config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-config/07-config-server/src/main/java" charset="UTF-8" />
   </component>
 </project>

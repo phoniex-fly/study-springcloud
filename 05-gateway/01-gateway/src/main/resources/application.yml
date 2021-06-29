@@ -1,0 +1,46 @@
+server:
+  port: 80
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      enabled: true #默认打开网关
+      discovery:
+        locator:
+          enabled: true #开启动态路由
+          lower-case-service-id: true #把服务名称转小写   访问路径：localhost/service-name/info
+        #  以下为基本配置
+      routes:
+        # 基础形式 访问路径：localhost/info
+        - id: user-service-route-id #名字随便写 但要唯一  # 基础形式
+          uri: http://localhost:9995
+          predicates: # 断言 返回true/false
+            - Path=/info/**
+          filters:
+            - name: RequestRateLimiter #name是固定的
+              args:
+                key-resolver: '#{@apiKeyResolver}'
+                redis-rate-limiter.replenishRate: 1 #每秒钟放令牌的速率
+                redis-rate-limiter.burstCapacity: 3 #桶大小
+        # 负载均衡 访问路径：localhost/info1
+        - id: provider-route-id #名字随便写 但要唯一
+          uri: lb://provider
+          predicates: # 断言 返回true/false
+            - Path=/info1/**
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 6379
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  #暴露健康检查端点，让服务可被监控
+
+
+#以下为优化配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka

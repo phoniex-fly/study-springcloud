@@ -2,71 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf6c6d0e-583c-4d1f-97f8-3a45f2009d5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/docker/DockerFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/java/com/example/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/src/test/java/com/example/EurekaServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/02-eureka-client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/02-eureka-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/02-eureka-client/src/main/java/com/example/EurekaClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/02-eureka-client/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/02-eureka-client/src/test/java/com/example/EurekaClientApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-eureka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/src/main/java/com/example/RestTemplateApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/src/main/java/com/example/controller/InfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/src/test/java/com/example/RestTemplateApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/01-rest-template/src/test/java/com/example/controller/InfoControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/java/com/example/ProviderAApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/java/com/example/controller/InfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/java/com/example/ProviderBApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/java/com/example/controller/InfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/src/main/java/com/example/ConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/src/main/java/com/example/controller/LBController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/03-ribbon-consumer/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-ribbon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-feign/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/src/main/java/com/example/HystrixProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/src/main/java/com/example/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/01-hystrix-provider/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/main/java/com/example/HystrixConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/main/java/com/example/feign/IOrderServiceFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/main/java/com/example/feign/hystrix/IOrderServiceFeignHystrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/02-hystrix-consumer/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/java/com/example/HystrixApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/java/com/example/hystrix/Hystrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/java/com/example/hystrix/HystrixAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/java/com/example/hystrix/HystrixStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/03-my-hystrix/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04-hystrix/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/00-user-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/00-user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/00-user-service/src/main/java/com/example/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/00-user-service/src/main/java/com/example/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/00-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/00-user-service/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/config/RequestRateLimitFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/config/RouteConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/filter/IPFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/filter/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/01-gateway/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-admin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-admin/src/main/java/com/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-admin/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-admin/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-client/src/main/java/com/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-client/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-server/src/main/java/com/example/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/07-config-server/src/test/java/com/example/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/01-eureka/01-eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/java/com/example/controller/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/java/com/example/controller/InfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-a/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/java/com/example/controller/InfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/java/com/example/controller/InfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/02-ribbon/02-ribbon-provider-b/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +69,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.3.3" />
-        <option name="userSettingsFile" value="D:\program_files\apache-maven-3.3.3\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\program_files\apache-maven-3.3.3\conf\settings_01.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -109,6 +85,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -119,11 +96,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-eureka/02-eureka-client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/07-config" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -150,23 +127,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HystrixApplication">
-    <configuration name="InfoControllerTest.doGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="01-rest-template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.controller.InfoControllerTest" />
-      <option name="METHOD_NAME" value="doGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
     <configuration name="InfoControllerTest.doPostJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01-rest-template" />
       <extension name="coverage">
@@ -195,6 +156,26 @@
       <option name="MAIN_CLASS_NAME" value="com.example.controller.InfoControllerTest" />
       <option name="METHOD_NAME" value="doPostParam" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="06-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="07-config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ConfigServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,6 +239,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="01-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.GatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="03-my-hystrix" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.HystrixApplication" />
@@ -302,22 +291,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTemplateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+    <configuration name="RestTemplateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="01-rest-template" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.RestTemplateApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="00-user-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.RestTemplateApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.InfoControllerTest.doGet" />
       <item itemvalue="JUnit.InfoControllerTest.doPostParam" />
       <item itemvalue="JUnit.InfoControllerTest.doPostJson" />
       <item itemvalue="Spring Boot.EurekaServer-8762" />
@@ -329,18 +323,22 @@
       <item itemvalue="Spring Boot.ProviderAApplication" />
       <item itemvalue="Spring Boot.ProviderBApplication" />
       <item itemvalue="Spring Boot.ConsumerApplication" />
-      <item itemvalue="Spring Boot.RestTemplateApplication" />
       <item itemvalue="Spring Boot.HystrixProviderApplication" />
-      <item itemvalue="Spring Boot.HystrixConsumerApplication" />
       <item itemvalue="Spring Boot.HystrixApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.RestTemplateApplication" />
+      <item itemvalue="Spring Boot.HystrixConsumerApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.HystrixConsumerApplication" />
         <item itemvalue="JUnit.InfoControllerTest.doPostJson" />
         <item itemvalue="JUnit.InfoControllerTest.doPostParam" />
-        <item itemvalue="Spring Boot.RestTemplateApplication" />
-        <item itemvalue="JUnit.InfoControllerTest.doGet" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +356,12 @@
       <workItem from="1624240873960" duration="584000" />
       <workItem from="1624245015915" duration="26640000" />
       <workItem from="1624696196465" duration="1734000" />
-      <workItem from="1624697967092" duration="9199000" />
+      <workItem from="1624697967092" duration="9730000" />
+      <workItem from="1624760410113" duration="10560000" />
+      <workItem from="1624840748830" duration="4900000" />
+      <workItem from="1624860633429" duration="2195000" />
+      <workItem from="1624862881379" duration="3283000" />
+      <workItem from="1624867172221" duration="4633000" />
     </task>
     <servers />
   </component>
@@ -366,10 +369,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="296" y="0" width="957" height="824" key="#Application" timestamp="1624713211120">
+    <state x="296" y="0" width="957" height="824" key="#Application" timestamp="1624762186609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="0" width="957" height="824" key="#Application/0.0.1536.824@0.0.1536.824" timestamp="1624713211120" />
+    <state x="296" y="0" width="957" height="824" key="#Application/0.0.1536.824@0.0.1536.824" timestamp="1624762186609" />
     <state x="296" y="0" width="957" height="824" key="#EurekaClient" timestamp="1624421945361">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -386,6 +389,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="296" y="0" width="957" height="824" key="#EurekaServerApplication/0.0.1536.824@0.0.1536.824" timestamp="1624323834189" />
+    <state x="296" y="0" width="957" height="824" key="#GatewayApplication" timestamp="1624868280574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="296" y="0" width="957" height="824" key="#GatewayApplication/0.0.1536.824@0.0.1536.824" timestamp="1624868280574" />
+    <state x="296" y="6" key="#ProviderAApplication" timestamp="1624868271168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="296" y="6" key="#ProviderAApplication/0.0.1536.824@0.0.1536.824" timestamp="1624868271168" />
     <state x="296" y="0" width="957" height="824" key="#RestTemplateApplication_(1)" timestamp="1624496625402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -398,82 +409,82 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="503" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1624422820279" />
-    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1624699337743">
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1624784845612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1624699337743" />
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1624784845612" />
     <state x="488" y="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1624581942060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1624581942060" />
-    <state x="490" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1624713176008">
+    <state x="490" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1624841094538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="490" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1624713176008" />
-    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1624697798425">
+    <state x="490" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1624841094538" />
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1624870382785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624697798425" />
-    <state width="1116" height="357" key="GridCell.Tab.0.bottom" timestamp="1624715137607">
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624870382785" />
+    <state width="1148" height="282" key="GridCell.Tab.0.bottom" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.0.center" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.0.center" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.0.left" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.0.left" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.0.right" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.0.right" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.1.bottom" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.1.bottom" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.1.center" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.1.center" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.1.left" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.1.left" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="357" key="GridCell.Tab.1.right" timestamp="1624715137607">
+    <state width="1148" height="282" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.1.right" timestamp="1624928639268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="357" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1624715137607" />
-    <state width="1116" height="306" key="GridCell.Tab.2.bottom" timestamp="1624713731684">
+    <state width="1148" height="282" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1624928639268" />
+    <state width="1148" height="282" key="GridCell.Tab.2.bottom" timestamp="1624928639140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="306" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624713731684" />
-    <state width="1116" height="306" key="GridCell.Tab.2.center" timestamp="1624713731684">
+    <state width="1148" height="282" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1624928639140" />
+    <state width="1148" height="282" key="GridCell.Tab.2.center" timestamp="1624928639140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="306" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1624713731684" />
-    <state width="1116" height="306" key="GridCell.Tab.2.left" timestamp="1624713731684">
+    <state width="1148" height="282" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1624928639140" />
+    <state width="1148" height="282" key="GridCell.Tab.2.left" timestamp="1624928639140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="306" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1624713731684" />
-    <state width="1116" height="306" key="GridCell.Tab.2.right" timestamp="1624713731684">
+    <state width="1148" height="282" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1624928639140" />
+    <state width="1148" height="282" key="GridCell.Tab.2.right" timestamp="1624928639140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1116" height="306" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1624713731684" />
+    <state width="1148" height="282" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1624928639140" />
     <state x="349" y="146" key="IDE.errors.dialog" timestamp="1624698006551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="146" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1624698006551" />
-    <state x="429" y="115" key="NewModule_or_Project.wizard" timestamp="1624697799852">
+    <state x="429" y="115" key="NewModule_or_Project.wizard" timestamp="1624851581839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="429" y="115" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1624697799852" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1624710382579">
+    <state x="429" y="115" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1624851581839" />
+    <state x="81" y="72" key="SettingsEditor" timestamp="1624863351251">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1624710382579" />
+    <state x="81" y="72" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1624863351251" />
     <state x="540" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1624496012591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -482,10 +493,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="467" y="115" width="602" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1624422507844" />
-    <state x="178" y="72" key="new project wizard" timestamp="1624708659576">
+    <state x="356" y="77" key="new project wizard" timestamp="1624870385118">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1624708659576" />
+    <state x="356" y="77" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1624870385118" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1624709169639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -498,6 +509,11 @@
           <url>jar://$PROJECT_DIR$/../../apache_maven_repository/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.jar!/com/netflix/client/config/DefaultClientConfigImpl.class</url>
           <line>24</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/05-gateway/01-gateway/src/main/java/com/example/filter/TokenFilter.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

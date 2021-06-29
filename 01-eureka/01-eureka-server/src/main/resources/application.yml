@@ -4,44 +4,48 @@ spring:
   application:
     name: eureka-server
 eureka:
-  server: #Ò»°ãÔÚserver¶Ë±àĞ´
-    response-cache-auto-expiration-in-seconds: 180 #server¶ËÏòclient¶ËÏìÓ¦·şÎñÁĞ±íµÄÊ±¼ä¼ä¸ô
-    eviction-interval-timer-in-ms: 90000 #Çå³ıÎŞĞ§½ÚµãµÄÆµÂÊ 90s
-    enable-self-preservation: true #serverµÄ×ÔÎÒ±£»¤»úÖÆ£¬±ÜÃâÒòÎªÍøÂçÔ­ÒòÔì³ÉÎóÉ¾³ı
-    renewal-percent-threshold: 0.85 #85%£¬Èç¹ûÔÚÒ»¸ö»ú·¿µÄclient¶Ë£¬15·ÖÖÓÄÚÓĞ85%µÄclientÃ»ÓĞĞøÔ¼£¬Ôò¿ÉÄÜÊÇÍøÂçÎÊÌâ
-  client: #Ò»°ãÔÚclient¶Ë±àĞ´
+  server: #ä¸€èˆ¬åœ¨serverç«¯ç¼–å†™
+    response-cache-auto-expiration-in-seconds: 180 #serverç«¯å‘clientç«¯å“åº”æœåŠ¡åˆ—è¡¨çš„æ—¶é—´é—´éš”
+    eviction-interval-timer-in-ms: 90000 #æ¸…é™¤æ— æ•ˆèŠ‚ç‚¹çš„é¢‘ç‡ 90s
+    enable-self-preservation: true #serverçš„è‡ªæˆ‘ä¿æŠ¤æœºåˆ¶ï¼Œé¿å…å› ä¸ºç½‘ç»œåŸå› é€ æˆè¯¯åˆ é™¤
+    renewal-percent-threshold: 0.85 #85%ï¼Œå¦‚æœåœ¨ä¸€ä¸ªæœºæˆ¿çš„clientç«¯ï¼Œ15åˆ†é’Ÿå†…æœ‰85%çš„clientæ²¡æœ‰ç»­çº¦ï¼Œåˆ™å¯èƒ½æ˜¯ç½‘ç»œé—®é¢˜
+  client: #ä¸€èˆ¬åœ¨clientç«¯ç¼–å†™
     service-url:
-      defaultZone: http://peer1:8761/eureka #µ¥»ú
-    #      defaultZone: ${EUREKA_SERVER_URL:http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer2:8763/eureka} #¼¯Èº
-    register-with-eureka: ${REGISTER_WITH_EUREKA:true} #×¢²á·şÎñÊ±ºò×Ô¼º×¢²á×Ô¼º
-    fetch-registry: ${FETCH_REGISTRY:true} #ÊÇ·ñÀ­È¡×¢²áÖĞĞÄÀïµÄ×¢²áĞÅÏ¢
-  instance: #¶¼¿ÉÒÔĞ´
+      defaultZone: http://peer1:8761/eureka #å•æœº
+    #      defaultZone: ${EUREKA_SERVER_URL:http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer2:8763/eureka} #é›†ç¾¤
+    register-with-eureka: ${REGISTER_WITH_EUREKA:true} #æ³¨å†ŒæœåŠ¡æ—¶å€™è‡ªå·±æ³¨å†Œè‡ªå·±
+    fetch-registry: ${FETCH_REGISTRY:true} #æ˜¯å¦æ‹‰å–æ³¨å†Œä¸­å¿ƒé‡Œçš„æ³¨å†Œä¿¡æ¯
+  instance: #éƒ½å¯ä»¥å†™
     hostname: ${HOST:localhost}
     instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
-    prefer-ip-address: ${PREFER_IP_ADDRESS:true} #ÏÔÊ¾IPµØÖ·
-    lease-renewal-interval-in-seconds: ${LEASE_RENEWAL_INTERVAL_IN-SECONDS:30} #¿Í»§¶Ë·¢ËÍĞÄÌøµÄÊ±¼ä
-    lease-expiration-duration-in-seconds: ${LEASE_EXPIRATION_DURATION_IN_SECONDS:90} #ÊµÀıµÄ×ÔÎÒÌŞ³ıÊ±¼ä£¬²»ÈÃÇëÇóºÍÁ÷Á¿¹ıÀ´\
-
+    prefer-ip-address: ${PREFER_IP_ADDRESS:true} #æ˜¾ç¤ºIPåœ°å€
+    lease-renewal-interval-in-seconds: ${LEASE_RENEWAL_INTERVAL_IN-SECONDS:30} #å®¢æˆ·ç«¯å‘é€å¿ƒè·³çš„æ—¶é—´
+    lease-expiration-duration-in-seconds: ${LEASE_EXPIRATION_DURATION_IN_SECONDS:90} #å®ä¾‹çš„è‡ªæˆ‘å‰”é™¤æ—¶é—´ï¼Œä¸è®©è¯·æ±‚å’Œæµé‡è¿‡æ¥\
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  #æš´éœ²å¥åº·æ£€æŸ¥ç«¯ç‚¹ï¼Œè®©æœåŠ¡å¯è¢«ç›‘æ§
 #server:
 #  port: 8761
 #spring:
 #  application:
 #    name: eureka-server
 #eureka:
-#  server: #Ò»°ãÔÚserver¶Ë±àĞ´
-#    response-cache-auto-expiration-in-seconds: 180 #server¶ËÏòclient¶ËÏìÓ¦·şÎñÁĞ±íµÄÊ±¼ä¼ä¸ô
-#    eviction-interval-timer-in-ms: 90000 #Çå³ıÎŞĞ§½ÚµãµÄÆµÂÊ 90s
-#    enable-self-preservation: true #serverµÄ×ÔÎÒ±£»¤»úÖÆ£¬±ÜÃâÒòÎªÍøÂçÔ­ÒòÔì³ÉÎóÉ¾³ı
-#    renewal-percent-threshold: 0.85 #85%£¬Èç¹ûÔÚÒ»¸ö»ú·¿µÄclient¶Ë£¬15·ÖÖÓÄÚÓĞ85%µÄclientÃ»ÓĞĞøÔ¼£¬Ôò¿ÉÄÜÊÇÍøÂçÎÊÌâ
-#  client: #Ò»°ãÔÚclient¶Ë±àĞ´
+#  server: #ä¸€èˆ¬åœ¨serverç«¯ç¼–å†™
+#    response-cache-auto-expiration-in-seconds: 180 #serverç«¯å‘clientç«¯å“åº”æœåŠ¡åˆ—è¡¨çš„æ—¶é—´é—´éš”
+#    eviction-interval-timer-in-ms: 90000 #æ¸…é™¤æ— æ•ˆèŠ‚ç‚¹çš„é¢‘ç‡ 90s
+#    enable-self-preservation: true #serverçš„è‡ªæˆ‘ä¿æŠ¤æœºåˆ¶ï¼Œé¿å…å› ä¸ºç½‘ç»œåŸå› é€ æˆè¯¯åˆ é™¤
+#    renewal-percent-threshold: 0.85 #85%ï¼Œå¦‚æœåœ¨ä¸€ä¸ªæœºæˆ¿çš„clientç«¯ï¼Œ15åˆ†é’Ÿå†…æœ‰85%çš„clientæ²¡æœ‰ç»­çº¦ï¼Œåˆ™å¯èƒ½æ˜¯ç½‘ç»œé—®é¢˜
+#  client: #ä¸€èˆ¬åœ¨clientç«¯ç¼–å†™
 #    service-url:
-#      #      defaultZone: http://peer1:8761/eureka #µ¥»ú
-#      defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer2:8763/eureka #¼¯Èº
-#    register-with-eureka: true #×¢²á·şÎñÊ±ºò×Ô¼º×¢²á×Ô¼º
-#    fetch-registry: true #ÊÇ·ñÀ­È¡×¢²áÖĞĞÄÀïµÄ×¢²áĞÅÏ¢
-#  instance: #¶¼¿ÉÒÔĞ´
+#      #      defaultZone: http://peer1:8761/eureka #å•æœº
+#      defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer2:8763/eureka #é›†ç¾¤
+#    register-with-eureka: true #æ³¨å†ŒæœåŠ¡æ—¶å€™è‡ªå·±æ³¨å†Œè‡ªå·±
+#    fetch-registry: true #æ˜¯å¦æ‹‰å–æ³¨å†Œä¸­å¿ƒé‡Œçš„æ³¨å†Œä¿¡æ¯
+#  instance: #éƒ½å¯ä»¥å†™
 #    hostname: localhost
 #    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
-#    prefer-ip-address: true #ÏÔÊ¾IPµØÖ·
-#    lease-renewal-interval-in-seconds: 30 #¿Í»§¶Ë·¢ËÍĞÄÌøµÄÊ±¼ä
-#    lease-expiration-duration-in-seconds: 90 #ÊµÀıµÄ×ÔÎÒÌŞ³ıÊ±¼ä£¬²»ÈÃÇëÇóºÍÁ÷Á¿¹ıÀ´
+#    prefer-ip-address: true #æ˜¾ç¤ºIPåœ°å€
+#    lease-renewal-interval-in-seconds: 30 #å®¢æˆ·ç«¯å‘é€å¿ƒè·³çš„æ—¶é—´
+#    lease-expiration-duration-in-seconds: 90 #å®ä¾‹çš„è‡ªæˆ‘å‰”é™¤æ—¶é—´ï¼Œä¸è®©è¯·æ±‚å’Œæµé‡è¿‡æ¥
