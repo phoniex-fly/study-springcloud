@@ -12,20 +12,20 @@
         <module name="00-user-service" />
         <module name="02-hystrix-consumer" />
         <module name="01-eureka" />
+        <module name="05-gateway" />
         <module name="01-gateway" />
-        <module name="02-ribbon-provider-a" />
+        <module name="06-admin" />
         <module name="01-hystrix-provider" />
         <module name="07-config-client" />
-        <module name="01-rest-template" />
         <module name="03-feign" />
         <module name="03-my-hystrix" />
         <module name="02-eureka-client" />
         <module name="02-ribbon-provider-b" />
-        <module name="05-gateway" />
+        <module name="02-ribbon-provider-a" />
         <module name="02-ribbon" />
         <module name="07-config-server" />
         <module name="03-ribbon-consumer" />
-        <module name="06-admin" />
+        <module name="01-rest-template" />
         <module name="01-eureka-server" />
       </profile>
     </annotationProcessing>
